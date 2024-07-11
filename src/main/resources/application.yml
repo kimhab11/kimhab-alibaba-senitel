@@ -1,0 +1,32 @@
+csp:
+  sentinel:
+    dashboard:
+      server: localhost:8788
+
+spring:
+  application:
+    name: kimhab-alibaba-senitel
+
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8858
+
+#      datasource: #Sentinel flow control rules
+#        ds1:
+#          nacos:
+#            server-addr: localhost:8848
+#            dataId: sentinel-spring-cloud-alibaba-example
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
+server:
+  port: 8081
+
+
+
+
+
+
+
